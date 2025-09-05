@@ -4,7 +4,6 @@ def determine_direction(degrees):
     directions = ["Север", "Северо-восток", "Восток", "Юго-восток", "Юг", "Юго-запад", "Запад", "Северо-запад", "Север"]
     index = round(degrees / 45) % 8
     return directions[index]
-
 # Пример использования
 angle = float(input("Введите угол в градусах (0-360): "))
 direction = determine_direction(angle)
